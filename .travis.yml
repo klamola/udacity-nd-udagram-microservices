@@ -5,16 +5,18 @@ node_js:
 services:
   - docker 
 
-# Build
-  - docker-compose -f docker-compose-build.yaml build --parallel
+before_script:
+  - echo "no before_scripts to be run"
 
-# Tagging
+script: 
+  - docker --version # print the docker version for logging
+  - docker-compose -f docker-compose-build.yaml build --parallel
   - docker tag udagram-api-feed lamolak/udagram-api-feed:v4
   - docker tag udagram-api-user lamolak/udagram-api-user:v4
   - docker tag udagram-frontend lamolak/udagram-frontend:v4
   - docker tag reverseproxy lamolak/reverseproxy:v4
   
-# Push
+after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push lamolak/udagram-api-feed:v4
   - docker push lamolak/udagram-api-user:v4
