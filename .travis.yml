@@ -1,3 +1,10 @@
+language: node_js
+node_js: 
+  - 16
+
+services:
+  - docker 
+
 # Build
   - docker-compose -f docker-compose-build.yaml build --parallel
 
