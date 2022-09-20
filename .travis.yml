@@ -12,9 +12,9 @@ script:
   - docker --version # print the docker version for logging
   - docker-compose -f docker-compose-build.yaml build --parallel
   - docker tag udagram-api-feed lamolak/udagram-api-feed:v2
-  - docker tag udagram-api-feed lamolak/udagram-api-user:v2
-  - docker tag udagram-api-feed lamolak/udagram-frontend:v2
-  - docker tag udagram-api-feed push lamolak/reverseproxy:v2
+  - docker tag udagram-api-user lamolak/udagram-api-user:v2
+  - docker tag udagram-frontend lamolak/udagram-frontend:v2
+  - docker tag reverseproxy push lamolak/reverseproxy:v2
   
 
 after_success:
