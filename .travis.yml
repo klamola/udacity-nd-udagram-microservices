@@ -13,7 +13,6 @@ script:
   - docker-compose -f docker-compose-build.yaml build --parallel
   - docker tag udagram-api-feed lamolak/udagram-api-feed
   - docker tag udagram-api-user lamolak/udagram-api-user
-  - docker tag udagram-frontend lamolak/udagram-frontend
   - docker tag reverseproxy lamolak/reverseproxy
   
 after_success:
