@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: udagram-api-user-service
+spec:
+  selector:
+    app.kubernetes.io/name: udagram-api-user
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
