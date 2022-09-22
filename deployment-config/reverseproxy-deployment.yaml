@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: reverseproxy-deployment
+  name: reverseproxy
   labels:
     app: reverseproxy
 spec:
@@ -15,7 +15,7 @@ spec:
         app: reverseproxy
     spec:
       containers:
-      - name: reverseproxy
+      - name: udagram-reverseproxy
         image: lamolak/reverseproxy
         ports:
         - containerPort: 80
