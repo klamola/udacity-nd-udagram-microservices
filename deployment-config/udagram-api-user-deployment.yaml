@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: udagram-api-user
-        image: lamolak/udagram-api-user:latest
+        image: lamolak/udagram-api-user:v2
         ports:
         - containerPort: 8080
         envFrom:

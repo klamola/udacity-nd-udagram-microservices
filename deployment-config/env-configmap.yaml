@@ -6,8 +6,8 @@ data:
   AWS_REGION: eu-east-2
   JWT_SECRET: testing
   POSTGRES_DB: postgres
-  POSTGRES_HOST: udagram-db.cii0cgoo5lpk.us-east-1.rds.amazonaws.com
-  PORT: 5432
+  POSTGRES_HOST: udagram-db.cpuoz88bjhgj.us-east-2.rds.amazonaws.com
+  PORT: "5432"
   URL: localhost:8100
 metadata:
   name: env-config
