@@ -16,11 +16,11 @@ spec:
     spec:
       containers:
       - name: udagram-reverseproxy
-        image: lamolak/reverseproxy:v3
+        image: lamolak/reverseproxy:v4
         ports:
         - containerPort: 8080
         envFrom:
           - configMapRef:
               name: env-config 
-          - secretKeyRef:
+          - secretRef:
               name: env-secret        
