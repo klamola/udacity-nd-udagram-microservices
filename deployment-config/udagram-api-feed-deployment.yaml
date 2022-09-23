@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: udagram-api-feed
-        image: lamolak/udagram-api-feed:v4
+        image: lamolak/udagram-api-feed:v5
         ports:
         - containerPort: 8080
       

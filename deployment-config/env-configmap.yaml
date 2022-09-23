@@ -8,6 +8,6 @@ data:
   POSTGRES_DB: postgres
   POSTGRES_HOST: udagram-db.cpuoz88bjhgj.us-east-2.rds.amazonaws.com
   PORT: "5432"
-  URL: localhost:8100
+  URL: a9f1a5bef54f94424b6584479e18744e-1617774914.us-east-2.elb.amazonaws.com:8100
 metadata:
   name: env-config

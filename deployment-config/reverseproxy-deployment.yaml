@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: udagram-reverseproxy
-        image: lamolak/reverseproxy:v4
+        image: lamolak/reverseproxy:v5
         ports:
         - containerPort: 8080
  
