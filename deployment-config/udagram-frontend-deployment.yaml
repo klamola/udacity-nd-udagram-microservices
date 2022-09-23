@@ -19,8 +19,3 @@ spec:
         image: lamolak/udagram-frontend:v4
         ports:
         - containerPort: 8100
-        envFrom:
-          - configMapRef:
-              name: env-config      
-          - secretRef:
-              name: env-secret   

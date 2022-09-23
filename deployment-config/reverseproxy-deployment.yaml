@@ -19,8 +19,4 @@ spec:
         image: lamolak/reverseproxy:v4
         ports:
         - containerPort: 8080
-        envFrom:
-          - configMapRef:
-              name: env-config 
-          - secretRef:
-              name: env-secret        
+ 
