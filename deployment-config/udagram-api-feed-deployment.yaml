@@ -16,7 +16,11 @@ spec:
     spec:
       containers:
       - name: udagram-api-feed
-        image: lamolak/udagram-api-feed:v5
+        image: lamolak/udagram-api-feed:v4v12
         ports:
         - containerPort: 8080
-      
+        envFrom:
+          - configMapRef:
+              name: env-config
+          - secretRef:
+              name: env-secret      

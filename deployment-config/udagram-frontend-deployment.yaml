@@ -16,6 +16,11 @@ spec:
     spec:
       containers:
       - name: udagram-frontend
-        image: lamolak/udagram-frontend:v5
+        image: lamolak/udagram-frontend:v12
         ports:
         - containerPort: 8100
+        envFrom:
+          - configMapRef:
+              name: env-config      
+          - secretRef:
+              name: env-secret   

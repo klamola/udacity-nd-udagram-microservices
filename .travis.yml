@@ -13,7 +13,6 @@ install:
 before_script:
   - echo "no tests"
 
-
 script: 
   - docker --version # print the docker version for logging
   - docker build -t udagram-api-feed ./udagram-api-feed 
