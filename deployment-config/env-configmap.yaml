@@ -3,10 +3,10 @@ kind: ConfigMap
 data:
   AWS_BUCKET: kamo-udagram-dev
   AWS_PROFILE: default
-  AWS_REGION: eu-west-2
+  AWS_REGION: us-west-2
   JWT_SECRET: testing
   POSTGRES_DB: postgres
-  POSTGRES_HOST: udagram-db.cjvuboqpcnj2.us-west-2.rds.amazonaws.com
+  POSTGRES_HOST: udagram.crq4yh3gypse.us-west-2.rds.amazonaws.com
   PORT: "5432"
   URL: localhost:8100
 metadata:
