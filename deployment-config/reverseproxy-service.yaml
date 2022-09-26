@@ -1,24 +1,14 @@
-# apiVersion: v1
-# kind: Service
-# metadata:
-#   labels:
-#     service: reverseproxy
-#   name: reverseproxy
-# spec:
-#   ports:
-#   - name: "8080"
-#     port: 8080
-#     targetPort: 8080
-#   selector:
-#     service: udagram-reverseproxy
 apiVersion: v1
 kind: Service
 metadata:
+  labels:
+    service: reverseproxy
   name: reverseproxy
 spec:
-  selector:
-    app.kubernetes.io/name: udagram-reverseproxy
   ports:
-    - protocol: TCP
-      port: 8080
-      targetPort: 8080
+  - name: "8080"
+    port: 8080
+    targetPort: 8080
+  selector:
+    service: udagram-reverseproxy
+  type: LoadBalancer
