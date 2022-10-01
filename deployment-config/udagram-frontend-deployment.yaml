@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  labels:
+    app: udagram-frontend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: udagram-frontend
+  template:
+    metadata:
+      labels:
+        app: udagram-frontend
+    spec:
+      containers:
+      - name: udagram-frontend
+        image: lamolak/udagram-frontend
+        ports:
+        - containerPort: 8100
+        envFrom:
+          - configMapRef:
+              name: env-config      
+          - secretRef:
+              name: env-secret   
