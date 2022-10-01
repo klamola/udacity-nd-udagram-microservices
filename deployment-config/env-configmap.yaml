@@ -1,13 +1,12 @@
 apiVersion: v1
 kind: ConfigMap
 data:
-  AWS_BUCKET: kamo-udagram-dev
+  AWS_BUCKET: kamo-udagram-bucket
   AWS_PROFILE: default
   AWS_REGION: us-west-2
   JWT_SECRET: testing
   POSTGRES_DB: postgres
-  POSTGRES_HOST: udagram.crq4yh3gypse.us-west-2.rds.amazonaws.com
-  PORT: "5432"
-  URL:  http://a4cc022bf165a4d5f906b63bcd245a7c-76841445.us-west-2.elb.amazonaws.com:8100
+  POSTGRES_HOST: udagram.csapudxnkdxb.us-west-2.rds.amazonaws.com
+  URL:  http://localhost:8100
 metadata:
   name: env-config
