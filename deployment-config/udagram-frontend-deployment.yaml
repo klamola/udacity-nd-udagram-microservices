@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: udagram-frontend
-        image: lamolak/udagram-frontend:v1
+        image: lamolak/udagram-frontend:v16
         ports:
         - containerPort: 8100
         envFrom:
